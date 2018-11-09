@@ -1,0 +1,144 @@
+.paper-shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.prof-list {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prof-list * {
+  box-sizing: border-box;
+}
+.prof-list .container-fluid{
+    width: 90%; margin: 0 auto
+}
+
+.prof-list .card-wrapper {
+  padding: 5px;
+  
+}
+
+.prof-list .prof-card {
+  display: flex;
+  overflow: hidden;
+  font-size: 0.7em;
+}
+
+.prof-card .card-image {
+  height: 9em;
+  width: 9em;
+  padding: 7px;
+  flex: 0 0 auto;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+}
+.prof-card .card-info {
+    
+    height: 9em;
+    overflow: hidden;
+  padding: 7px 7px 7px 0;  
+}
+.card-info .prof-name {
+  font-size: 1.2em;
+  line-height: 1;
+  font-weight: bolder;
+  padding-bottom: 0.4em;
+  padding-top: 0.4em;
+}
+
+.card-info .prof-dept, .card-info .prof-role {
+  font-size: 1em;
+  color: lightslategrey;
+}
+
+/*-----Paginator */
+
+#prof-pagination {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 45px;
+  padding: 0;
+  height: auto;
+  justify-content: center;
+}
+
+#prof-pagination a {
+  transition: all 0.3s, color 0.5s;
+}
+
+#prof-pagination.pagination {
+  width: 100%;
+}
+#prof-pagination.pagination li {
+    
+}
+#prof-pagination.pagination li a {
+    height: 3em;
+  line-height: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0;
+  
+}
+#prof-pagination.pagination li a:focus {
+  box-shadow: none;
+}
+
+
+#prof-pagination a {
+  border-color: #662483 !important; /* Color Primario*/
+  color: white; /* Color Primario*/
+}
+#prof-pagination :not(.active) a {
+  background-color: #662483 !important; /* Color Primario*/
+}
+#prof-pagination .active a,
+#prof-pagination a:hover {
+  color: #662483 !important; /* Color Primario*/
+  background-color: white !important;
+  border-color: white !important;
+}
+
+.primary-bg-color {
+  background-color: #662483 !important; /* Color Primario*/ /*662483 */
+}
+
+.secondary-bg-color {
+  background-color: orange !important; /* Color Secundario*/
+}
+
+@media screen and (min-width: 500px){
+    .prof-list .prof-card {
+        font-size: 0.85em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .prof-list .prof-card {
+        font-size: 1em;
+    }
+    .prof-list .container-fluid{
+        width: 75%; margin: 0 auto
+    }
+
+    .prof-card .card-image {
+        height: 8.5em;
+        width: 8.5em;        
+    }
+    .prof-card .card-info {
+        height: 8.5em;
+        line-height: 1.25;
+    }
+
+    .prof-tabs ul li{
+      font-size: 1.3em;
+    }
+   
+    
+   
+
+}
